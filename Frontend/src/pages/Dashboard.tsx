@@ -38,6 +38,7 @@ const Dashboard: React.FC = () => {
             {/* Кнопка для преподавателя */}
             <Button variant="ghost" size="sm" onClick={() => setShowJson(!showJson)}>
               {showJson ? "✕ Ukryj JSON" : "{ } Pokaż JSON"}
+            </Button>
             
             <Button variant="ghost" size="sm" onClick={refetch}>↺ Odśwież</Button>
             <Button onClick={() => setShowModal(true)}>+ Dodaj coin</Button>
