@@ -11,6 +11,9 @@ const Dashboard: React.FC = () => {
   const { user } = useAuth();
   const { coins, isLoading, error, addCoin, updateCoin, removeCoin, refetch } = useWatchlist();
   const [showModal, setShowModal] = useState(false);
+  
+  // Состояние для показа JSON (специально для защиты)
+  const [showJson, setShowJson] = useState(false);
 
   const handleAdd = async (coinId: string) => {
     await addCoin({ coin_id: coinId });
@@ -32,10 +35,41 @@ const Dashboard: React.FC = () => {
             </p>
           </div>
           <div style={{ display: "flex", gap: "8px" }}>
+            {/* Кнопка для преподавателя */}
+            <Button variant="ghost" size="sm" onClick={() => setShowJson(!showJson)}>
+              {showJson ? "✕ Ukryj JSON" : "{ } Pokaż JSON"}
+            
             <Button variant="ghost" size="sm" onClick={refetch}>↺ Odśwież</Button>
             <Button onClick={() => setShowModal(true)}>+ Dodaj coin</Button>
           </div>
         </div>
+
+        {/* ПАНЕЛЬ С JSON (выводится только при нажатии на кнопку) */}
+        {showJson && (
+          <div style={{ 
+            background: "#1a1a1a", 
+            border: "1px solid #333", 
+            borderRadius: "8px", 
+            padding: "16px", 
+            marginBottom: "20px",
+            boxShadow: "0 4px 12px rgba(0,0,0,0.5)" 
+          }}>
+            <h3 style={{ color: "#4ade80", fontSize: "14px", marginBottom: "10px", fontFamily: "monospace" }}>
+              // Struktura danych REST API (JSON)
+            </h3>
+            <pre style={{ 
+              fontSize: "12px", 
+              color: "#ccc", 
+              overflowX: "auto", 
+              background: "#000", 
+              padding: "12px", 
+              borderRadius: "4px",
+              maxHeight: "300px" 
+            }}>
+              {JSON.stringify({ watchlist: coins }, null, 2)}
+            </pre>
+          </div>
+        )}
 
         {coins.length > 0 && <StatsBar coins={coins} />}
 
