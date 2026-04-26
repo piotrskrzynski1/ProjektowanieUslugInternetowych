@@ -1,0 +1,55 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:144.0) Gecko/20100101 Firefox/144.0">
+  <diagram name="Strona-1" id="7YC9yiQ4qZarMjuo8_25">
+    <mxGraphModel dx="1084" dy="627" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="4BkUfjKdLRp9tGt_MsnO-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Cryptocurrency" vertex="1">
+          <mxGeometry height="60" width="120" x="380" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="4BkUfjKdLRp9tGt_MsnO-19" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="User" vertex="1">
+          <mxGeometry height="60" width="120" x="380" y="584.5" as="geometry" />
+        </mxCell>
+        <mxCell id="4BkUfjKdLRp9tGt_MsnO-22" edge="1" parent="1" source="4BkUfjKdLRp9tGt_MsnO-19" style="endArrow=ERzeroToMany;html=1;rounded=0;startArrow=ERmandOne;startFill=0;endFill=0;" target="4BkUfjKdLRp9tGt_MsnO-23" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="800" y="540" as="sourcePoint" />
+            <mxPoint x="570" y="550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4BkUfjKdLRp9tGt_MsnO-24" connectable="0" parent="4BkUfjKdLRp9tGt_MsnO-22" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Adds" vertex="1">
+          <mxGeometry relative="1" x="0.07" y="4" as="geometry">
+            <mxPoint x="4" y="10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4BkUfjKdLRp9tGt_MsnO-23" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Watchlist" vertex="1">
+          <mxGeometry height="60" width="120" x="380" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="4BkUfjKdLRp9tGt_MsnO-25" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="PriceHistory" vertex="1">
+          <mxGeometry height="60" width="130" x="375" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="4BkUfjKdLRp9tGt_MsnO-26" edge="1" parent="1" source="4BkUfjKdLRp9tGt_MsnO-25" style="endArrow=ERmandOne;html=1;rounded=0;startArrow=ERzeroToMany;startFill=0;endFill=0;" target="4BkUfjKdLRp9tGt_MsnO-7" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="390" y="390" as="sourcePoint" />
+            <mxPoint x="440" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4BkUfjKdLRp9tGt_MsnO-40" connectable="0" parent="4BkUfjKdLRp9tGt_MsnO-26" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Contains" vertex="1">
+          <mxGeometry relative="1" x="0.3511" y="-1" as="geometry">
+            <mxPoint x="1" y="-7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4BkUfjKdLRp9tGt_MsnO-31" edge="1" parent="1" source="4BkUfjKdLRp9tGt_MsnO-7" style="endArrow=ERzeroToMany;html=1;rounded=0;startArrow=ERmandOne;startFill=0;endFill=0;" target="4BkUfjKdLRp9tGt_MsnO-23" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="390" y="390" as="sourcePoint" />
+            <mxPoint x="440" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4BkUfjKdLRp9tGt_MsnO-32" connectable="0" parent="4BkUfjKdLRp9tGt_MsnO-31" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Concerns" vertex="1">
+          <mxGeometry relative="1" x="-0.0881" as="geometry">
+            <mxPoint y="3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
